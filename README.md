@@ -6,66 +6,54 @@ description: >-
 
 # 💻 PHP TILI ASOSLARI
 
-## MAQSADIMIZ
+### Nima uchun PHP tilini o’rganish kerak?
 
-Darsimizning asl maqsadi tinglovchilarga dasturlash asoslarini va eng muhimi turli muammolarga yechim bo'luvchi dasturlar yozishni o'rgatish.&#x20;
+**PHP** kichik manbali loyiha sifatida boshlandi va u qanchalik foydali ekanligini ko’proq odamlar bilib olishdi. Rasmus Lerdorf PHP-ning birinchi versiyasini 1994 yilda ishga tushirgan.
 
-Buning uchun biz Python tilidan foydalansakda, dars davomida olingan bilimlar barcha dasturlar tili uchun umumiydir.
+**PHP** talabalar va ishchi mutaxassislar uchun veb-ishlab chiqarish domenida ishlayotganda juda yaxshi dasturiy ta’minot muhandisi bo’lishi shart. PHP-ni o’rganishning ba’zi bir muhim afzalliklarini sanab o’taman:
 
-Darslarni boshlashdan avval, keling..
+* PHP — bu «PHP: gipermatnli protsessor» ning rekursiv qisqartmasi.
+* PHP — bu HTML-ga o’rnatilgan server tomonidagi skript tilidir. U dinamik tarkibni, ma’lumotlar bazalarini, sessiyalarni kuzatishni boshqarish, hatto butun elektron tijorat saytlarini yaratish uchun ishlatiladi.
+* U MySQL, PostgreSQL, Oracle, Sybase, Informix va Microsoft SQL Server kabi bir qator mashhur ma’lumotlar bazalari bilan birlashtirilgan.
+* PHP, ayniqsa Unix tomonida Apache moduli sifatida kompilyatsiya qilinganida, juda yoqimli. MySQL-server ishga tushirilgandan so’ng, juda murakkab so’rovlarni ham rekord o’rnatishda ulkan natijalar to’plami bilan bajaradi.
+* PHP POP3, IMAP va LDAP kabi ko’plab yirik protokollarni qo’llab-quvvatlaydi. PHP4 Java va tarqatilgan ob’ektlar arxitekturasini (COM va CORBA) qo’llab-quvvatladi va birinchi marta n-darajali rivojlanish imkoniyatini yaratdi.
+* PHP kechirimli: PHP tili iloji boricha kechirimli bo’lishga harakat qiladi.
+* PHP sintaksisi C-o’xshash.
 
-## TANISHAMIZ
+### PHP ning xususiyatlari
 
-Ismim **Anvar Narzullaev.**
 
-[Universiti Sains Islam Malaysia](https://www.usim.edu.my) oliygohining Axborot Texnologiyalari kafedrasida yetakchi mutaxassis lavozimida ishlayman. Raqamli Texnologiyalar, Kompyuter Arxitekturasi, Axborot Xavfsizligi fanlaridan dars beraman.&#x20;
 
-2004 yilda Toshkent Axborot Texnologiyalar Universitetini Telekommunikatsiya yo'nalishini bitirganman.&#x20;
+PHP-ning beshta muhim xususiyati — bu amaliy xarakterga ega bo’lishga imkon beradi.
 
-2006 yilda Janubiy Koreyaning Yeungnam Universitetida Axborot Texnologiyalari Muhandisi yo'nalishida Magistrlik, 2012 yilda esa shu oliygohda Doktorlik (PhD) unvonini himoya qilganman.
+* Oddiylik
+* Samaradorlik
+* Xavfsizlik
+* Moslashuvchanlik
+* Tanishlik
 
-2013 yildan beri Malayziyaning turli oliy o'quv yurtlarida Computer Science va Axborot Texnologiyalari yo'nalishlarida dars berib kelaman.
+### Salom dunyo PHP dan foydalanmoqda.
 
-Birinchi professional dasturimni 13 yoshda yozganman. Turli yillar davomida C, C++, Delphi, Matlab, Java va Python tillaridan foydalanib kelganman.&#x20;
+Sizga PHP haqida bir oz hayajon berish uchun men sizga oddiy an’anaviy PHP Hello World dasturini taqdim etaman, uni Demo link yordamida sinab ko’rishingiz mumkin.
 
-Oxirgi yillarda asosan ikki yo'nalishda ilmiy izlanishlar qilaman: IoT (Internet of things) va AI (Artificial Intelligence).&#x20;
+```
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <?php echo "Hello, World!";?>
+</body>
+</html>
+```
 
-Asosiy dasturlash qurollarim C++, Matlab va Python.
+### PHP dasturlari
 
-## ONLAYNDAGI MANZILLARIMIZ
+Avval aytib o’tganimizdek, PHP Internetda eng ko’p ishlatiladigan tillardan biridir. Men ularning bir nechtasini bu erda sanab o’taman:
 
-SariqDev telegram kanali: [https://t.me/sariqdev](https://t.me/sariqdev)
-
-SariqDevYoutube kanali: [https://www.youtube.com/sariqdev](https://www.youtube.com/sariqdev)
-
-## DARSLARIMIZ KIM UCHUN?
-
-Darslarimiz yakunida siz nafaqat Python tilini, balki barcha dasturlash tillari uchun umumiy bo'lgan tushunchalar va asoslarni ham puxta o'zlashtirib olasiz.
-
-Kursni muvaffaqiyatli tamomlagan tinglovchilar, kelajakda dasturlashning tor va murakkab yo'nalishlarini ham, mutlaqo yangi dasturlash tilini ham yengillik bilan o'zlashtira oladilar.&#x20;
-
-Darslarimizning **birinchi qismida** siz Python dasturlarini yozish uchun muhim bo'lgan asosiy tushunchalarni o'rganasiz. Ushbu tushunchalar xar qanday dasturlash tillari uchun bir xildir. Jumladan ushbu qism quyidagi mavzularni o'z ichiga oladi:
-
-* Ma'lumotlar turlari va ularni saqlash usullari
-* Ma'lumotlar to'plamini yaratish, ular ustida samarali ishlash usullari
-* _**While, if **_ tsikllari yordamida shartlarni tekshirish va kodni tarmoqlash
-* Interaktiv dasturlar yaratish orqali foydalanuvchilar bilan ikki tomonlama "muloqot" o'rnatish, ulardan ma'lumot qabul qilish
-* Kodning ma'lum qismlarini qayta-qayta ishlatish uchun funktsiyalar yozish
-* Yozgan dasturingizni tekshirish uchun testlar yozish, va kelajakdagi xatolarning oldini olish
-
-Kursimizning **ikkinchi qismida** esa o'zlashtirgan bilimlaringizni puxtalash uchun bir nechta loyihalar ustida ishlaysiz.
-
-## NIMA UCHUN AYNAN PYTHON?
-
-**Python **— o'rganish uchun oson, foydalanish uchun qulay, ko'p qirrali dasturlash tili bo'lib, dasturlashga yangi kirganlar uchun ham, soha mutaxassislari uchun ham zo'r tanlov.
-
-### Python o'rganish uchun 5 sabab:
-
-1. Python dasturlash tiliga bo'lgan talab yildan yilga oshib kelmoqda. CodingDojo portalining tadqiqotlariga ko'ra, 2020 yilda aynan Python tilida dasturlovchi mutaxassislarga eng ko'p talab bo'lgan
-2.
-
-![](.gitbook/assets/image.png)
-
-###
-
-##
+* PHP tizim funktsiyalarini bajaradi, ya’ni tizimdagi fayllardan ularni yaratishi, ochishi, o’qishi, yozishi va yopishi mumkin.
+* PHP formalarni boshqarishi mumkin, ya’ni fayllardan ma’lumotlarni to’plash, ma’lumotlarni faylga saqlash, elektron pochta orqali ma’lumotlarni yuborish, foydalanuvchiga ma’lumotlarni qaytarish.
+* Siz PHP orqali ma’lumotlar bazangizdagi elementlarni qo’shasiz, o’chirasiz va o’zgartirasiz.
+* Cookies o’zgaruvchilariga kirish va cookie-fayllarni o’rnatish.
+* PHP-dan foydalanib, foydalanuvchilarga veb-saytingizning ba’zi sahifalariga kirishni cheklashingiz mumkin.
+* U ma’lumotlarni shifrlashi mumkin.
